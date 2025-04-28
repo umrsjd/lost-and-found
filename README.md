@@ -1,12 +1,18 @@
-# React + Vite
+My Lost & Found App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+My Lost & Found App is a web application designed to help users post and find lost items. It features a user-friendly interface with a backend powered by Express.js and a frontend built with React.
 
-Currently, two official plugins are available:
+Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Post Lost Items: Users can post details about lost items, including images and descriptions.
+- Find Lost Items: Users can search for lost items by category and location.
+- User Authentication: Secure login and registration using JWT tokens.
+- Responsive Design: The app is fully responsive and works on all devices.
 
-## Expanding the ESLint configuration
+Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Frontend: React, Framer Motion, Emotion Styled
+- Backend: Node.js, Express.js
+- Email Service: Nodemailer for sending OTPs
+- Authentication: JWT for secure user sessions
+
