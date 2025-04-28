@@ -1,0 +1,2592 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #FFFFFF;
+  background-color: #001F3F;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #001F3F;
+  overflow-x: hidden;
+}
+
+a {
+  font-weight: 500;
+  color: #FFFFFF;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #E6E6E6;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: #FFFFFF;
+}
+
+button {
+  border-radius: 8px;
+  border: 2px solid #FFFFFF;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: transparent;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  background-color: #FFFFFF;
+  color: #001F3F;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #FFFFFF;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::after {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #001F3F;
+    background-color: #FFFFFF;
+  }
+  a:hover {
+    color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+  button {
+    background-color: #001F3F;
+    color: #FFFFFF;
+  }
+  button:hover {
+    background-color: #001F3F;  /* Changed from #003366 to maintain consistency */
+  }
+}
