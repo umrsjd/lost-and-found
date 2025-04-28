@@ -3,9 +3,9 @@ import styled from '@emotion/styled';
 
 const ItemContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 2rem;
-  padding: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
   background: #001F3F;
   color: #FFFFFF;
 `;

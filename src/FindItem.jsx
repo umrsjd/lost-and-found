@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styled from '@emotion/styled';
 import { motion } from 'framer-motion';
 
-const PageContainer = styled(motion.div)` // Changed to motion.div
+const PageContainer = styled(motion.div)`
   padding-top: 80px;
   min-height: 100vh;
   background: #001F3F;
@@ -11,7 +11,15 @@ const PageContainer = styled(motion.div)` // Changed to motion.div
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  width: 100%;
+  width: 100vw;
+  box-sizing: border-box;
+
+  @media (max-width: 600px) {
+    padding-top: 60px;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+  }
 `;
 
 const SearchSection = styled.div`
@@ -21,6 +29,10 @@ const SearchSection = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 600px) {
+    padding: 1rem 0.5rem;
+  }
 `;
 
 const SearchBar = styled.div`
@@ -32,6 +44,12 @@ const SearchBar = styled.div`
   border-radius: 30px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    border-radius: 15px;
+    max-width: 100vw;
+  }
 `;
 
 const CategoriesSection = styled.div`
@@ -40,6 +58,10 @@ const CategoriesSection = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 600px) {
+    padding: 1rem 0.5rem;
+  }
 `;
 
 const CategoryGrid = styled.div`
@@ -61,10 +83,15 @@ const CategoryGrid = styled.div`
 
   @media (max-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 600px) {
     grid-template-columns: 1fr;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    max-width: 100vw;
   }
 `;
 
@@ -104,7 +131,11 @@ const SearchBarContainer = styled.div`
   position: relative;
   width: 100%;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 1.5rem auto 0 auto; // Added top margin for spacing
+
+  @media (max-width: 600px) {
+    margin: 1.2rem auto 0 auto; // Slightly less margin on mobile
+  }
 `;
 
 const LocationInput = styled.input`

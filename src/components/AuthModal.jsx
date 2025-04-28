@@ -341,7 +341,7 @@ function AuthModal({ isOpen, onClose, onLogin }) {
             transition={{ duration: 0.5 }}
           >
             <CloseButton onClick={onClose}>✕</CloseButton>
-            <Title>Sign up/Login now to</Title>
+            <Title>Sign up/Login now</Title>
             {!showOTP ? (
               <>
                 <form onSubmit={handleContinue}>

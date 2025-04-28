@@ -253,6 +253,27 @@ const LoadingDots = styled(motion.div)`
   }
 `;
 
+const LoginButton = styled(motion.button)`
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background: #FFFFFF;
+  color: #001F3F;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    background: #E6E6E6;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+    padding: 0.8rem 1.6rem;
+  }
+`;
+
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isPostFormOpen, setIsPostFormOpen] = useState(false);
@@ -318,7 +339,11 @@ function App() {
             {!isAuthenticated ? (
               <NavLink 
                 whileHover={{ scale: 1.1 }}
-                onClick={() => setIsAuthModalOpen(true)}
+                onClick={(e) => {
+                  e.preventDefault(); // Prevent default link behavior
+                  setIsAuthModalOpen(true);
+                }}
+                style={{ cursor: 'pointer' }} // Ensure the cursor is a pointer
               >
                 Login
               </NavLink>
@@ -355,7 +380,27 @@ function App() {
                 setIsMenuOpen(false);
               }}>Post Item</NavLink>
               <NavLink to="/about" onClick={() => setIsMenuOpen(false)}>About Us</NavLink>
-              <NavLink href="/login">Login</NavLink>
+              {!isAuthenticated ? (
+                <NavLink 
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setIsAuthModalOpen(true);
+                    setIsMenuOpen(false);
+                  }}
+                >
+                  Login
+                </NavLink>
+              ) : (
+                <NavLink 
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleLogout();
+                    setIsMenuOpen(false);
+                  }}
+                >
+                  Logout
+                </NavLink>
+              )}
             </MobileMenu>
           )}
         </AnimatePresence>
