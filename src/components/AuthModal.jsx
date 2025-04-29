@@ -237,7 +237,7 @@ function AuthModal({ isOpen, onClose, onLogin }) {
   const handleContinue = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:5000/api/generate-otp', {
+      const response = await fetch('https://lost-and-found-yyov.onrender.com/api/generate-otp', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -273,7 +273,7 @@ function AuthModal({ isOpen, onClose, onLogin }) {
 
   const handleResendOTP = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/generate-otp', {
+      const response = await fetch('https://lost-and-found-yyov.onrender.com/api/generate-otp', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -294,7 +294,7 @@ function AuthModal({ isOpen, onClose, onLogin }) {
   const handleVerifyOTP = async () => {
     try {
       const enteredOTP = otp.join('');
-      const response = await fetch('http://localhost:5000/api/verify-otp', {
+      const response = await fetch('https://lost-and-found-yyov.onrender.com/api/verify-otp', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
